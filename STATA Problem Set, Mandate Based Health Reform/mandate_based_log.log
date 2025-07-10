@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\darion\Desktop\github_training_july_10_25\STATA Problem Set,
+>  Mandate Based Health Reform\mandate_based_log.log
+  log type:  text
+ opened on:  10 Jul 2025, 11:45:49
+
+. 
+. use problem_set.dta
+
+. 
+. describe
+
+Contains data from problem_set.dta
+ Observations:       577,650                  
+    Variables:            30                  17 Oct 2016 13:33
+----------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------------
+id              str16   %16s                  
+a24             byte    %14.0g     tfipsst    state (tfipsst)
+wpfinwgt        double  %37.0g     wpfinwgt   WW: Person weight
+tage            byte    %25.0g     tage       PE: Age as of last birthday
+a23             float   %9.0g                 MA
+c12             float   %9.0g                 During
+a22             float   %9.0g                 After
+a19             float   %9.0g                 ESHI
+w2              float   %9.0g                 Weekly earnings/baseline hours per
+                                                week
+h2              float   %9.0g                 Hours per week
+c7              float   %9.0g                 ESHIlabel var During
+a12             float   %9.0g                 ESHIlabel var After
+a8              float   %9.0g                 MAlabel var ESHI
+c1              float   %9.0g                 MAlabel var ESHIlabel var During
+a1              float   %9.0g                 MAlabel var ESHIlabel var After
+a25             float   %9.0g                 Large
+a11             float   %9.0g                 MAlabel var After
+c6              float   %9.0g                 MAlabel var During
+b1              float   %9.0g                 a1*a25
+b8              float   %9.0g                 a8*a25
+b11             float   %9.0g                 a11*a25
+b12             float   %9.0g                 a12*a25
+b19             float   %9.0g                 a19*a25
+b22             float   %9.0g                 a22*a25
+b23             float   %9.0g                 a23*a25
+b24             float   %9.0g                 a24*a25
+d1              float   %9.0g                 c1*a25
+d6              float   %9.0g                 c6*a25
+d7              float   %9.0g                 c7*a25
+d12             float   %9.0g                 c12*a25
+----------------------------------------------------------------------------------
+Sorted by: id
+
+. 
+. capture log close

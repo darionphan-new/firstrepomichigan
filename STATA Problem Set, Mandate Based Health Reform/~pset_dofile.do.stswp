@@ -1,0 +1,13 @@
+
+
+
+
+capture log close
+
+log using "mandate_based_log.log", replace
+
+use problem_set.dta
+
+describe
+
+capture log close
